@@ -24,7 +24,7 @@
                 <li class="nav-item"><a href="#services" class="nav-link a-animation">Services</a></li>
                 <li class="nav-item"><button class="hide" type="button" onclick="contact()">Contact us</button></li>
             </ul>
-            <button class="btn-get-in-touch nav-menu" type="button" onclick="contact()">Contact us</button>
+            <button class="btn-get-in-touch nav-menu" type="button" onclick="openForm()">Contact us</button>
             <div class="hamburguer">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -105,8 +105,7 @@
 
 
         <section id="projects">
-          <button id="addPost">CLICK ME</button>
-            <h2>Recent Projects</h2>
+           <h2 id="recent-projects" onclick="myFunction()">Recent Projects</h2>
             <div id="cards-projects" class="cards">
                 <div class="card-box card-box-hover">
                     <img src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/projects-section/1.jpg?raw=true"
@@ -136,30 +135,27 @@
         </section>
 
         <section id="opinions">
-
-
-            <div>
+            <div class="testimonial-container">
                 <img src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/memoji-1.png?raw=true"
                     alt="Blond girl memoji">
                 <img src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/memoji-2.png?raw=true"
                     alt="Man with hat memoji">
             </div>
-            <div id="center">
+            <div class="testimonial-text-container">
                 <h3>Hear What Our Clients Have to Say</h3>
                 <p>"Circle helped us through very stage of our startup. <br>
                     We really enjoyed working with you."</p>
-                <div>
+                <div class="testimonial-person-container">
                     <img id="profilepic"
                         src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/profile.png?raw=true"
                         alt="Profile pic">
-                    <div>
-                        <p id="name">Kristin Watson
-                        <p>
+                    <div class="testimonial-person-info">
+                        <p id="name">Kristin Watson</p>
                         <p>Booking.com</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="testimonial-container">
                 <img src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/memoji-3.png?raw=true"
                     alt="Bearb man memoji">
                 <img src="https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler/resources/images/testimonial-section/memoji-4.png?raw=true"
@@ -239,8 +235,9 @@
         </div>
     </footer>
 
-    <script src="../recursos/js/mid.js"></script>
+    <script src="recursos/js/mid2.js"></script>
     
 </body>
 
 </html>
+

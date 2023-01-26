@@ -1,0 +1,13 @@
+
+.img-principal{
+    background-color: red;
+    width: 100%;
+    /* margin: 0 17rem 0 17rem; */
+    height: 44.4rem;
+    background-image: url(../images/projects-section/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.2);
+
+}

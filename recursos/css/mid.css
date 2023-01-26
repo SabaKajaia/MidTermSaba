@@ -355,6 +355,7 @@
   }
   **/
   
+
   #opinions div{
       display: flex;
       flex-wrap: nowrap;
@@ -368,8 +369,8 @@
   }
   
   #opinions img{
-      height: 15rem;
-      width: 15rem;
+    display: inline-block;
+    width: 25%;
   }
   
   #opinions div h3{
@@ -435,6 +436,9 @@
   
   /* Projects Section */
   
+  .hidden-button {
+    display: none;
+}
   #projects,
   #services {
     margin: 0rem 17rem;
@@ -1067,6 +1071,17 @@
     height: 6rem;
     width: 100%;
     border: none;
+  }
+  .img-principal{
+    background-color: red;
+    width: 100%;
+    /* margin: 0 17rem 0 17rem; */
+    height: 44.4rem;
+    background-image: url(../images/projects-section/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.2);
   }
   
   
