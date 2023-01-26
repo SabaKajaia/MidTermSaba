@@ -1,0 +1,1072 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.6s;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: var(--background);
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  a{
+    cursor: pointer;
+  }
+  
+  section{
+    margin-bottom: 20rem !important;
+  }
+  
+  :root {
+    --opinions: #292e47;
+    --title: #514d67;
+    --btn: #072ac8;
+    --text: #6b708d;
+    --hover: #43d2ff;
+    --background: #f4f6fc;
+  }
+  
+  /* GLOBAL */
+  
+  h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--title);
+    line-height: 7rem;
+  }
+  
+  h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--title);
+  }
+  
+  h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--title);
+  }
+  
+  h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--title);
+  }
+  
+  p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text);
+  }
+  
+  /*navbar*/
+  /* NavBar */
+  
+  header{
+    margin: 0 17rem;
+    padding-top: 8.5rem;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  a{
+    color: var(--title);
+    text-decoration: none;
+  }
+  
+  ::-webkit-scrollbar{
+    background-color: var(--background);
+    width: 1.2rem;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--text);
+    border-radius: 0.5rem;
+  }
+  
+  .navbar{
+    font-size: 17px;
+    background-color: var(--background);
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 24px; 
+    margin-bottom: 5rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .navbar img {
+    padding-left: 0;
+    padding-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 6rem;
+  }
+  
+  .nav-link{
+    transition: 0.7s ease;
+  }
+  
+  .navlink:hover{
+    color: var(--hover);
+  }
+  
+  .navbar button{
+    background-color: var(--btn);
+    border: none;
+    color: white;
+    padding: 1.5rem 3.3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+  
+  .hamburguer{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--btn);
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  @media(max-width:767px){
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-top: 8.5rem;
+    }
+  
+    .navbar{
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+  
+    }
+  
+    .navbar img {
+        padding-left: 0;
+        padding-right: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 6rem;
+    }
+  
+    .hamburguer{
+        display: block;
+    }
+  
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+  
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--background);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+  
+    .nav-item{
+        margin: 16px 0;
+        list-style: none;
+        text-decoration: none;
+    }
+  
+    .nav-menu.active{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        left: 0;
+    }
+  
+    .hide {
+        display: flex;
+    }
+  
+  }
+  
+  /* Hero Banner */
+  
+  .container {
+    max-width: 144rem;
+    margin: 0 17rem 0 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #images-hero {
+    max-width: 52rem;
+    margin: 0;
+  
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .img-fluid {
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+  }
+  
+  #images-hero > .img-fluid:nth-child(1) {
+    right: 55%;
+  }
+  
+  #images-hero > .img-fluid:nth-child(2) {
+    width: 50%;
+    top: 65%;
+    left: 50%;
+  }
+  
+  #boy {
+    position: relative;
+    width: 100%;
+  }
+  
+  .row > .col-6:nth-child(1) {
+    width: 55rem;
+  }
+  
+  .text-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+  
+  .text-align p {
+    margin: 3rem 0 3rem 0;
+  }
+  
+  .btn-get-in-touch {
+    font-size: 1.7rem;
+    display: inline-block;
+    text-align: center;
+    background: var(--btn);
+    color: #fff;
+    padding: 1rem 3rem 1.2rem 3rem;
+    transition: 0.5s;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-get-in-touch:hover {
+    background: var(--hover);
+  }
+  
+  #hero-banner .btn-see-our-work {
+    margin-left: 3rem;
+    font-size: 1.7rem;
+    color: var(--title);
+    padding: 0.8rem 2rem 0.8rem 2rem; 
+    display: inline-flex;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  
+  #hero-banner .btn-see-our-work:hover {
+    color: var(--btn);
+  }
+  
+  #hero-banner .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  
+  #hero-banner .animated:hover {
+    animation: none;
+  }
+  
+  /* End Of hero Banner */
+  
+  
+  /* Opinions Section */
+  #opinions{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      background: #292E47;
+      
+      background-image: url("https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/testimonial-section/orbit.png?raw=true");
+     
+      background-position: center;
+      background-image: url("https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/testimonial-section/orbit.png?raw=true"), linear-gradient(#292E47, #292E47);
+      background-size: cover;
+      height: 62rem;
+      width: 91%;
+      margin: auto;
+  }
+
+  @media (max-width:800px){
+      #opinions {
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+  }
+  **/
+  
+  #opinions div{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  #opinions #center{
+      padding-top: 12rem;
+  }
+  
+  #opinions img{
+      height: 15rem;
+      width: 15rem;
+  }
+  
+  #opinions div h3{
+      color: white;
+      text-align: center;
+  }
+  
+  #opinions div p{
+      text-align: center;
+      color: #FFC600;
+      size: 2.4rem;
+  }
+  
+
+#center {
+    display: flex;
+    justify-content: space-between;
+}
+
+#center div:first-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#center div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+#center div:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#center div img {
+    margin: 0 1rem;
+}
+  
+  #opinions div div #name{
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      color: #A2D6F9;
+      size: 1.7rem;
+      padding: 5rem 0 0 0;
+      margin: 0;
+  }
+  
+  #opinions #center #profilepic{
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      padding: 0;
+      margin: 0;
+  }
+  
+  @media (max-width:450px) {
+      #opinions div img{
+          width: 7.5rem;
+          height: 7.5rem;
+      }
+      
+  }
+  
+  /* Projects Section */
+  
+  #projects,
+  #services {
+    margin: 0rem 17rem;
+  }
+  
+  #projects h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card-box {
+    width: 34rem;
+    height: 44rem;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    box-shadow: 0rem 3.8rem 7.7rem rgba(0, 0, 0, 0.1);
+    ;
+  }
+  
+  .card-box img {
+    width: 34rem;
+    height: 24rem;
+  }
+  
+  @media (max-width: 1024px){
+    #projects,
+    #services {
+      margin: 0rem 10rem;
+    }
+  
+    #projects h2 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+    .cards{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 767px){
+  
+    #projects,
+    #services {
+      margin: 0;
+    }
+  
+    #projects h2 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  
+    .cards{
+      justify-content: center;
+    }
+  }
+  
+  /* Media Query */
+  
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 2rem 0 2rem;
+    }
+  
+    .text-align h1, #form h1 {
+      font-size: 4.5rem;
+      line-height: 6rem;
+    }
+  
+    #questions #responsive-form{
+      width: 90%;
+    }
+  
+  
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      margin-left: 10rem;
+      margin-right: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3rem 0 3rem;
+    }
+  
+    .row {
+      flex-direction: column-reverse;
+    }
+  
+    .text-align h1 {
+      margin-top: 3rem;
+    }
+  
+    .text-align h1, .text-align p{
+      text-align: center;
+    }
+  
+    #hero-banner .animated {
+      animation: none;
+    }
+  
+    #images-hero {
+      display: flex;
+      justify-content: center;
+    }
+  
+    #boy {
+      max-width: 70%;
+    }
+  
+    #hero-banner .button-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #hero-banner .btn-get-in-touch {
+      font-size: 1.4rem;
+    }
+  
+    .row > .col-6:nth-child(1) {
+      width: 100%;
+    }
+  
+    .row > .col-6:nth-child(2) {
+      margin-top: 2.5rem;
+    }
+  
+    #questions #responsive-form .input-form{
+      margin-bottom: 0.5rem;
+      margin-right: 0;
+      height: 8rem;
+    }
+  
+    #questions #responsive-form{
+      flex-direction: column;
+      align-items: center;
+      height: 8rem;
+    }
+  
+    .btn-submit{
+      width: 100%;
+    }
+  
+    #questions{
+  
+      padding: 0.5rem 0 0.5rem 0 ;
+      }
+  
+      #questions h2{
+      font-size: 3.5rem;
+      }
+  
+      /* Formulario Contact page */
+      #form fieldset:nth-child(2){
+        flex-direction: column;
+        width: 100%;
+      }
+  
+      #form fieldset:nth-child(2) div #email{
+        margin-right: 0 !important;
+        margin-bottom: 1.2rem;
+      }
+  
+  }
+  
+    /* End MEdia query */
+  
+  
+  
+  /* Clients */
+  
+  
+  
+  .client-logo {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  
+  .logos {
+    width: 12rem;
+    filter: invert(40%) sepia(8%) saturate(15%) hue-rotate(39deg) brightness(93%)
+      contrast(86%);
+  }
+  .logos:hover {
+    filter: none;
+  }
+  
+  .prueba-logo {
+    mask-image: url(../images/logos/amazon-logo.svg);
+    width: 4rem;
+    background-color: red;
+    height: 3rem;
+  }
+  
+  
+  
+  /* End of Clients */
+  
+  .card-box h3,
+  p,
+  a {
+    margin: 2.5rem;
+    font-size: 1.7rem;
+  }
+  
+  .card-box h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0rem;
+  }
+  
+  .card-box p {
+    margin-top: 0.7rem;
+    margin-bottom: 6rem;
+  }
+  
+  .card-box a {
+    text-decoration: none;
+  }
+  
+  .card-box a:visited {
+    color: #072ac8;
+  }
+  
+  /* services */
+  
+  #services h2{
+    margin-bottom: 5rem;
+  }
+  
+  #services .card-box {
+    height: 34rem;
+  }
+  .card-box .svg {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    background-color: #ecf7ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card-box .svg img {
+    width: 4rem;
+    height: 4rem;
+   
+  
+  }
+  
+  .card-box .svg:hover {
+    background-color: black;
+  }
+  
+  .card-box .svg:hover img {
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg);
+  }
+  
+  #services .cards .card-box p {
+    margin-bottom: 4rem;
+  }
+  
+  @media (max-width: 1024px){
+    section{
+      margin-bottom: 10rem !important;
+    }
+    #services h2{
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+  
+  @media (max-width: 767px){
+    section{
+      margin-bottom: 10rem !important;
+    }
+    
+    #services h2{
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+  
+  /** Simplify **/
+  
+  #simplify{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      padding-left: 17rem;
+      margin-right: 17rem;
+      margin-top: 17rem;
+  }
+  
+  @media (max-width: 800px) {
+      #simplify{
+          padding-left: 0;
+          margin-right: 0;
+      }
+      
+  }
+  
+  #simplify #imageback{
+      margin-top: 25rem;
+      width: 80%;
+      height: 40rem;
+      background: linear-gradient(90deg, rgba(255,131,40,1) 0%, rgba(0,162,242,1) 48%, rgba(157,15,231,1) 100%);
+      filter: blur(5rem);
+      position: absolute;
+  }
+  
+  @media (max-width: 1000px) {
+      #simplify #imageback{
+          width: 70%;
+      }
+  }
+  
+  @media (max-width: 650px) {
+      #simplify #imageback{
+          width: 100%;
+      }
+  }
+  
+  #img-hero{
+    margin-bottom: 8rem;
+  }
+  
+  #simplify img{
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 44rem;
+  }
+  
+  #simplify div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  #simplify #Text{
+      margin-top: 10rem;
+  }
+  
+  /* Final Simnplify */
+  
+  /* footer */
+  
+  footer {
+    display: flex;
+    margin: 6rem 17rem;
+    justify-content: space-between;
+  }
+  
+  footer > div > img {
+    width: 9.8rem;
+    height: 3rem;
+  }
+  
+  footer div:first-child {
+    width: 25rem;
+    padding: 1.5rem;
+    padding-left: 0;
+  }
+  
+  footer div:first-child p {
+    width: 25rem;
+    margin-left: 0rem;
+    font-size: 1.7rem;
+  }
+  
+  footer div:last-child {
+    width: 43.5rem;
+  }
+  
+  footer div:last-child ul {
+    display: flex;
+    list-style: none;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+  footer div:last-child ul li {
+    width: 25rem;
+  }
+  
+  .a-animation {
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  .a-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 0.4rem;
+    background-color: var(--btn);
+    bottom: -0.3rem;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+  
+  
+  .a-animation:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 1024px){
+    footer {
+      display: flex;
+      margin: 6rem 17rem;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
+  
+    footer div:last-child ul{
+     padding-left: 0px;
+    }
+    footer div:last-child ul li{
+     text-align: center;
+    }
+  
+    footer div:first-child {
+      width: 42rem;
+      text-align: center;
+    }
+    footer div:first-child p{
+      margin: 3rem auto;
+      text-align: center;
+    }
+  
+    #form{
+      margin-left: 6rem !important;
+      margin-right: 6rem !important;
+      
+    }
+  }
+  
+  @media (max-width: 767px){
+    .button-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer div{
+      padding-right: 0 !important;
+    }
+  
+    footer div ul{
+      padding-right: 0 !important;
+    }
+  
+  }
+  
+  /* End of footer */
+  
+  /* Questions */
+  #questions{
+      margin: auto;
+      background-color: #ffc600;
+      max-width: 91%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 13.6rem 0 13.6rem 0 ;
+  }
+  
+  #questions h2{
+      margin-bottom: 2rem;
+      text-align: center;
+  }
+  
+  #questions .input-form{
+      border: none;
+  }
+  
+  #questions form{
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 30%;
+      height: 5.5rem;
+  }
+  
+  .inputWidth{
+      width: 80%;
+      padding-left: 0.5rem;
+  }
+  
+  #questions form img{
+      width: 2.5rem;
+      /* position: absolute;
+      z-index: 1; */
+      margin-right: 1rem;
+      margin-left: 1.5rem;
+  }
+  
+  #questions form input{
+      /* position: relative; */
+  
+      border: none;
+      outline: none;
+      
+  }
+  
+  
+  
+  .input-form{
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      margin-right: 1rem;
+      
+  }
+  
+  .btn-submit{
+      /* border: none;
+      width: 25%;
+      text-align: center;
+      color: #fff;
+      background-color: var(--btn); */
+      font-size: 1.3rem;
+  }
+  /* End  Questions */
+  
+  
+  /* Contact page */
+  #form{
+    margin: 16rem 17rem 18rem 17rem;
+    
+  }
+  
+  #form h1{
+    margin-bottom: 8rem;
+  }
+  
+  #form fieldset{
+    margin-bottom: 4rem;
+    border: none;
+  }
+  
+  #form fieldset label{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 1rem;
+    
+  }
+  
+  #form fieldset input, textarea{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text);
+    outline: none;
+    border: none;
+    height: 7rem;
+    padding-left: 1rem;
+    background-color: rgba(107, 112, 141, 0.1);
+  }
+  
+  #form fieldset textarea{
+    padding-top: 1.5rem;
+  }
+  
+  #form fieldset:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #form fieldset:nth-child(2){
+    display: flex;
+    align-items: center;
+  }
+  
+  #form fieldset:nth-child(2) div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #form fieldset #name:invalid{
+    background-color: tomato;
+  }
+  
+  #form fieldset:nth-child(2) div #email{
+    margin-right: 1rem;
+  }
+  
+  #form fieldset:nth-child(2) div #email:invalid{
+    border: 2px solid tomato;
+  }
+  
+  #form fieldset:nth-child(2) div #phone{
+    
+    margin-right: 0;
+  
+  }
+  
+  #form fieldset:nth-child(3){
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #submit{
+    text-align: center;
+    height: 6rem;
+    width: 100%;
+    border: none;
+  }
+  
+  
