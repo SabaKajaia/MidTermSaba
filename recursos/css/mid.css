@@ -330,107 +330,91 @@
   
   
   /* Opinions Section */
+
   #opinions{
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: row;
-      justify-content: space-around;
-      background: #292E47;
-      
-      background-image: url("https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/testimonial-section/orbit.png?raw=true");
-     
-      background-position: center;
-      background-image: url("https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/testimonial-section/orbit.png?raw=true"), linear-gradient(#292E47, #292E47);
-      background-size: cover;
-      height: 62rem;
-      width: 91%;
-      margin: auto;
-  }
-
-  @media (max-width:800px){
-      #opinions {
-          margin-left: 0px;
-          margin-right: 0px;
-      }
-  }
-  **/
-  
-
-  #opinions div{
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-  }
-  
-  #opinions #center{
-      padding-top: 12rem;
-  }
-  
-  #opinions img{
-    display: inline-block;
-    width: 25%;
-  }
-  
-  #opinions div h3{
-      color: white;
-      text-align: center;
-  }
-  
-  #opinions div p{
-      text-align: center;
-      color: #FFC600;
-      size: 2.4rem;
-  }
-  
-
-#center {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #292E47;
+ 
+  background-position: center;
+  background-image: url("("https://github.com/dzc1/class-jan09/blob/main/midterm-boiler-plates/midterm-project-boiler-advanced/resources/images/testimonial-section/orbit.png?raw=true"),"), 
+  linear-gradient(#292E47, #292E47);
+  background-size: cover;
+  height: 62rem;
+  width: 91%;
+  margin: auto;
 }
 
-#center div:first-child {
-    display: flex;
-    justify-content: flex-start;
+#opinions div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#center div:nth-child(2) {
-    display: flex;
-    justify-content: center;
+#opinions #center{
+  padding-top: 12rem;
 }
 
-#center div:last-child {
-    display: flex;
-    justify-content: flex-end;
+#opinions img{
+  height: 15rem;
+  width: 15rem;
 }
 
-#center div img {
-    margin: 0 1rem;
+#opinions div h3{
+  color: white;
+  text-align: center;
 }
-  
-  #opinions div div #name{
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-      color: #A2D6F9;
-      size: 1.7rem;
-      padding: 5rem 0 0 0;
-      margin: 0;
+
+#opinions div p{
+  text-align: center;
+  color: #FFC600;
+  size: 2.4rem;
+}
+
+#opinions #center div{
+  flex-direction: row;
+  padding-bottom: 5rem;
+}
+
+#opinions #center div div{
+  flex-direction: column;
+}
+
+#opinions #center div p{
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  color: white;
+  size: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+#opinions div div #name{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: #A2D6F9;
+  size: 1.7rem;
+  padding: 5rem 0 0 0;
+  margin: 0;
+}
+
+#opinions #center #profilepic{
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width:450px) {
+  #opinions div img{
+      width: 7.5rem;
+      height: 7.5rem;
   }
-  
-  #opinions #center #profilepic{
-      border-radius: 50%;
-      width: 5rem;
-      height: 5rem;
-      padding: 0;
-      margin: 0;
-  }
-  
-  @media (max-width:450px) {
-      #opinions div img{
-          width: 7.5rem;
-          height: 7.5rem;
-      }
       
   }
   
